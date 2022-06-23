@@ -122,9 +122,9 @@ namespace DistribuidoraProductos
             }
             else
             {
-                Console.WriteLine("Digite el porcentaje a aumentar en el precio del producto: ");
+                Console.WriteLine("Digite el porcentaje a aumentar en el precio del producto (Ejemplo: 10): ");
                 porcentajeAumento = float.Parse(Console.ReadLine());
-                totalCalculo = precioUnitario[i] * porcentajeAumento;
+                totalCalculo = (precioUnitario[i] * (porcentajeAumento/100));
                 precioUnitario[i] += totalCalculo;
             }
         }
